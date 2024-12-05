@@ -42,9 +42,9 @@ export const NavigationBar = () => {
                         </Nav>
                         <span className="navbar-text">
                             <div className="social-icon">
-                                <a href="#"> <img src={navIcon1} alt=""/></a>
-                                <a href="#"> <img src={navIcon2} alt=""/></a>
-                                <a href="#"> <img src={navIcon3} alt=""/></a>
+                                <a href="https://www.linkedin.com/in/arad-parshad-sabet-156325179/"> <img src={navIcon1} alt=""/></a>
+                                <a href="https://www.facebook.com/arad.parshadsabet/"> <img src={navIcon2} alt=""/></a>
+                                <a href="https://www.instagram.com/ap_sabet/"> <img src={navIcon3} alt=""/></a>
                             </div>
                             <button className="vvd" onClick={
                                 () => {
