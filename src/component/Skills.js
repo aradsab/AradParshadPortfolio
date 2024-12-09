@@ -2,6 +2,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import meter1 from "../assets/img/meter1.svg"
+import meter2 from "../assets/img/meter2.svg"
+import meter3 from "../assets/img/meter3.svg"
+import colorSharp from "../assets/img/color-sharp.png"
+
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
@@ -33,17 +38,31 @@ export const Skills = () => {
                                 Skills
                             </h2>
                             <p>
-                                QWFKJHGQWKDFB
+                                Experienced in backend development with Go and Python Django, and frontend frameworks like JavaScript and TypeScript. Proficient in cloud computing using Docker for containerization and Kubernetes for orchestration.
                             </p>
-                            <Carousel responsive={responsive} infinite={true} className="skillslider">
+                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src=
+                                    <img src={meter1} alt="Image"/>
+                                    <h5> TypeScript </h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image"/>
+                                    <h5> Golang </h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter3} alt="Image"/>
+                                    <h5> Big Data </h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image"/>
+                                    <h5> Machine Learning </h5>
                                 </div>
                             </Carousel>
                         </div>
                     </Col>
                 </Row>
             </Container>
+            <img className="backgroud-image-left" src={colorSharp}/>
         </section>
     )
 }
