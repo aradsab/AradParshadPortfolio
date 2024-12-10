@@ -43,8 +43,8 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7} >
-                        <span className="tagline">Welcome to my portfolio!</span>
-                        <h1>{"I'm Arad "}<span className="wrap">{text}</span></h1>
+                        <span className="tagline">Welcome to my Portfolio</span>
+                        <h1>{"I'm Arad a "}<span className="wrap">{text}</span></h1>
                         <p>I have experience with Java, Python, Go, and TypeScript, building scalable systems using SOLID principles and optimizing algorithms through projects like a Value Iteration simulation. My background in distributed systems, containerization with Docker/Kubernetes, and data science equips me to tackle complex technical challenges and deliver efficient solutions.</p>
                         <button onClick={() => {console.log('hey')}}> Let's connnect <ArrowRightCircle size={25} /></button>
                     </Col>
