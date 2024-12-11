@@ -48,7 +48,7 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition:  0.32s ease-in-out;
+  transition: 0.32s ease-in-out;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -246,15 +246,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
@@ -538,5 +538,109 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/* Mobile-Friendly Updates */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav.navbar {
+    padding: 10px 0;
+  }
+  nav.navbar a.navbar-brand {
+    width: 20%;
+  }
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  .navbar-text button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .banner {
+    padding: 150px 0 50px 0;
+  }
+  .banner h1 {
+    font-size: 36px;
+  }
+  .banner p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .banner button {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .skill h2 {
+    font-size: 32px;
+  }
+  .skill p {
+    font-size: 14px;
+    margin: 14px 0 50px 0;
+  }
+
+  .project h2 {
+    font-size: 32px;
+  }
+  .project p {
+    font-size: 14px;
+    width: 80%;
+  }
+  .project .nav.nav-pills {
+    width: 100%;
+  }
+
+  .contact h2 {
+    font-size: 32px;
+  }
+  .contact form input, .contact form textarea {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+  .contact form button {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+
+  .App-header {
+    min-height: auto;
+    padding: 20px;
+    font-size: calc(8px + 2vmin);
+  }
+}
+
+@media (max-width: 480px) {
+  nav.navbar a.navbar-brand {
+    width: 30%;
+  }
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 0 10px;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+  }
+  .banner p {
+    font-size: 12px;
+  }
+  .banner button {
+    font-size: 14px;
+  }
+
+  .project p {
+    width: 90%;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+  }
+  .contact form input, .contact form textarea {
+    font-size: 12px;
   }
 }
