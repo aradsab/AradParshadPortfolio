@@ -42,16 +42,28 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7} >
+                    <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{"I'm Arad a "}<span className="wrap">{text}</span></h1>
-                        <p>I have experience with Java, Python, Go, and TypeScript, building scalable systems using SOLID principles and optimizing algorithms through projects like a Value Iteration simulation. My background in distributed systems, containerization with Docker/Kubernetes, and data science equips me to tackle complex technical challenges and deliver efficient solutions.</p>
-                        <button style={{ backgroundColor: "purple", color: "white", border: "none", padding: "10px 20px", borderRadius: "5px", cursor: "pointer" }} onClick={() => {
+                        <h1>{"I'm Arad "}</h1>
+                        <h1>{"a: "}<span className="wrap">{text}</span></h1>
+                        <p>I have experience with Java, Python, Go, and TypeScript, building scalable systems using
+                            SOLID principles and optimizing algorithms through projects like a Value Iteration
+                            simulation. My background in distributed systems, containerization with Docker/Kubernetes,
+                            and data science equips me to tackle complex technical challenges and deliver efficient
+                            solutions.</p>
+                        <button style={{
+                            backgroundColor: "purple",
+                            color: "white",
+                            border: "none",
+                            padding: "10px 20px",
+                            borderRadius: "5px",
+                            cursor: "pointer"
+                        }} onClick={() => {
                             document.getElementById("contact")?.scrollIntoView({behavior: "smooth"});
-                        }}> Let's connnect <ArrowRightCircle size={25} /></button>
+                        }}> Let's connnect <ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img" />
+                    <img src={headerImg} alt="Header Img" />
                     </Col>
                 </Row>
             </Container>
