@@ -1,4 +1,10 @@
 import projImg1 from '../assets/img/engine.png';
+import projImg2 from '../assets/img/meuseum.png';
+import projImg3 from '../assets/img/finance.png';
+import projImg4 from '../assets/img/music.png';
+import projImg5 from '../assets/img/health.png';
+import projImg6 from '../assets/img/crime.png';
+
 import sparkImg from '../assets/img/spark.png';
 import sagemakerImg from '../assets/img/sagemaker.png';
 
@@ -16,6 +22,37 @@ export const Projects = () => {
                 "Applies AST-driven filters to data records, enabling precise and scalable query handling.",
             imgUrl: projImg1,
             githubLink: "https://github.com/aradsab/Query-Engine"
+        },
+        {
+            title: "Museum Management",
+            description: "This application enables museum employees to manage articles, collections, and exhibits effectively. Archivists can search and update articles while recording examination details. Curators can search and organize articles, exhibits, and collections, plan exhibits by adding or removing articles, track visitor and revenue data, and manage collections by updating their contents.",
+            imgUrl: projImg2,
+            githubLink: "https://github.com/aradsab/SQL-databse-Manager"
+        },
+        {
+            title: "Finance Manager",
+            description: "Developed a comprehensive financial management tool to track income, savings, mandatory expenses, and controllable spending. The system provides feedback on spending habits, adjusts budgets based on expense types, and includes a feature to suggest affordable nearby dining options tailored to user budgets and spending patterns.",
+            imgUrl: projImg3,
+            githubLink: "https://github.com/aradsab/FinanceManager?tab=readme-ov-file"
+        },
+        {
+            title: "Melodybrush",
+            description: "Transforms song lyrics into artwork through Amazon Bedrock’s Jurassic-2 Ultra and Stable Diffusion XL 1.0 LLMs.\n" +
+                "Conducted hyperparameter tuning on Jurassic-2 (generated descriptive prompts) and SDXL (produced artwork).",
+            imgUrl: projImg4,
+            githubLink: "https://github.com/aradsab/MusicArt-CIC-hackathon"
+        },
+        {
+            title: "Health Tracker",
+            description: "The Health Tracker app helps users improve their physical and mental well-being by creating personalized lifestyle plans based on their health status. Users can monitor their health, receive alerts for potential risks, get tips for a healthier lifestyle, and access tailored meal suggestions with recipes. The app also allows goal setting to align recommendations with individual objectives, emphasizing the impact of daily habits on overall well-being.",
+            imgUrl: projImg5,
+            githubLink: "https://github.com/aradsab/healthTracker"
+        },
+        {
+            title: "Crime Data Analysis",
+            description: "Recently, the rates of crimes in the east of Vancouver have surged, prompting an exploration into the extent of this increase. Downtown Vancouver and Hastings Street have frequently been labeled as high crime areas according to many news sources. Factors such as socioeconomic inequality and poverty in East Vancouver are associated with higher crime rates, which seem to contribute to an elevated crime rate compared to the Westside.",
+            imgUrl: projImg6,
+            githubLink: "https://github.com/aradsab/Stat-201-Project/blob/main/project.ipynb"
         }
     ]
 
