@@ -49,6 +49,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
+  background-color: #121212;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -120,6 +121,11 @@ span.navbar-text {
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+}
+.navbar-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navbar-text button span {
   z-index: 1;
@@ -536,6 +542,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   nav.navbar {
     padding: 10px 0;
+    background-color: #121212;
   }
   nav.navbar a.navbar-brand {
     width: 20%;
