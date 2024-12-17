@@ -63,7 +63,7 @@ export const Banner = () => {
                         }}> Let's connnect <ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                    <img src={headerImg} alt="Header Img" />
+                    <img className="img-fluid custom-animation-image" src={headerImg} alt="Header Img" />
                     </Col>
                 </Row>
             </Container>

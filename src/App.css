@@ -564,6 +564,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 16px;
   }
 
+  .custom-animation-image {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  @media (max-width: 768px) {
+    .custom-animation-image {
+      max-width: 80%;
+    }
+  }
+
   .skill h2 {
     font-size: 32px;
   }
