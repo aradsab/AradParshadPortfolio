@@ -617,6 +617,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   nav.navbar a.navbar-brand {
     width: 30%;
   }
+  nav.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
   nav.navbar .navbar-nav .nav-link.navbar-link {
     padding: 0 10px;
   }
