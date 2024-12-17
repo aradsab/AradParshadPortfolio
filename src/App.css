@@ -625,7 +625,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 30%;
   }
   nav.navbar {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgb(0, 0, 0) !important;
   }
   nav.navbar .navbar-nav .nav-link.navbar-link {
     padding: 0 10px;
