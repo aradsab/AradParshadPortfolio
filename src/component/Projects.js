@@ -83,14 +83,19 @@ export const Projects = () => {
                             Developed diverse projects, including a NoSQL Query Engine with dynamic AST-based validation, a distributed CNN model using TensorFlow and SageMaker, a Finance Manager tool for tracking expenses and budgets with Django and React, and Melodybrush, a creative platform transforming lyrics into artwork using AWS generative models.
                         </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                <Nav.Item>
+                            <Nav
+                                variant="pills"
+                                className="nav-pills mb-5 d-flex flex-column flex-sm-row justify-content-center align-items-center"
+                                id="pills-tab"
+                            >
+                                <Nav.Item className="mb-2 mb-sm-0">
                                     <Nav.Link eventKey="first">Full-Stack</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="second">Cloud Computing</Nav.Link>
                                 </Nav.Item>
                             </Nav>
+
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>
