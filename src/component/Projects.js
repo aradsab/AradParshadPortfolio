@@ -4,9 +4,11 @@ import projImg3 from '../assets/img/finance.png';
 import projImg4 from '../assets/img/music.png';
 import projImg5 from '../assets/img/health.png';
 import projImg6 from '../assets/img/crime.png';
+import projImg7 from '../assets/img/dam.png';
 
 import sparkImg from '../assets/img/spark.png';
 import sagemakerImg from '../assets/img/sagemaker.png';
+import raftImg from '../assets/img/raftImg.png';
 
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
@@ -53,6 +55,12 @@ export const Projects = () => {
             description: "Recently, the rates of crimes in the east of Vancouver have surged, prompting an exploration into the extent of this increase. Downtown Vancouver and Hastings Street have frequently been labeled as high crime areas according to many news sources. Factors such as socioeconomic inequality and poverty in East Vancouver are associated with higher crime rates, which seem to contribute to an elevated crime rate compared to the Westside.",
             imgUrl: projImg6,
             githubLink: "https://github.com/aradsab/Stat-201-Project/blob/main/project.ipynb"
+        },
+        {
+            title: "Digital Asset Management",
+            description: "The DAM system streamlines media asset management by enabling uploads, metadata tagging, and fast searches; it optimizes storage via compression, auto-archives completed projects, and logs every modification for full transparency.",
+            imgUrl: projImg7,
+            githubLink: "https://github.com/aradsab/Digital-Asset-Manager"
         }
     ]
 
@@ -68,6 +76,12 @@ export const Projects = () => {
             description: "This project demonstrates the end-to-end workflow of training, saving, loading, deploying, and running a Convolutional Neural Network (CNN) model using the CIFAR-10 dataset. The deployment utilizes AWS SageMaker for distributed training and inference, with a comparison to local machine execution.",
             imgUrl: sagemakerImg,
             githubLink: "https://github.com/aradsab/Image-Recognition/tree/main/Distributed%20Machine%20Learning"
+        },
+        {
+            title: "RAFT",
+            description: "I built RAFT, which familiarized me with distributed consensus algorithms, leader election, log replication, and handling network partitions and failures in a fault-tolerant system.",
+            imgUrl: raftImg,
+            githubLink: "https://github.students.cs.ubc.ca/CPSC416-2024W-T2"
         }
     ]
 

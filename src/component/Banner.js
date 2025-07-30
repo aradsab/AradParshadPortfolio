@@ -5,12 +5,12 @@ import { useEffect, useState } from "react"
 
 export const Banner = () => {
     const changePeriod = 2000
-    const toRotate = ["Full-Stack Developer", "Web Developer", "DevOps Engineer"]
+    const toRotate = ["Full-Stack Development", "Distributed Systems", "DevOps Engineering"]
 
     const [wordNum, setWordNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(200);
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -26,11 +26,10 @@ export const Banner = () => {
         let updateText = isDeleting ? fullText.substring(0,text.length -1) : fullText.substring(0, text.length + 1)
         setText(updateText)
         if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2)
+            setDelta(100)
             if (updateText === '') {
                 setIsDeleting(false)
                 setWordNum(wordNum + 1)
-                setDelta(500)
             }
         } else if (updateText === fullText){
             setIsDeleting(true)
@@ -44,8 +43,9 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{"I'm Arad "}</h1>
-                        <h1>{"a: "}<span className="wrap">{text}</span></h1>
+                        <h1>{"I'm Arad! "}</h1>
+                        <h2>{"I'm passionate about: "}</h2>
+                        <h2><span className="wrap">{text || '\u00A0'}</span></h2>
                         <p>I have experience with Java, Python, Go, and TypeScript, building scalable systems using
                             SOLID principles and optimizing algorithms through projects like a Value Iteration
                             simulation. My background in distributed systems, containerization with Docker/Kubernetes,
